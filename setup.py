@@ -55,7 +55,7 @@ with open("autosklearn/__version__.py") as fh:
     version = fh.readlines()[-1].split()[-1].strip("\"'")
 
 setuptools.setup(
-    name='auto-sklearn',
+    name='orion-auto-sklearn',
     description='Automated machine learning.',
     version=version,
     ext_modules=extensions,

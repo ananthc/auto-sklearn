@@ -33,6 +33,8 @@ from autosklearn.util.hash import hash_array_or_matrix
 from autosklearn.metrics import f1_macro, accuracy, r2
 from autosklearn.constants import *
 
+from mlflow import log_metric, log_param, log_artifact
+
 
 def _model_predict(self, X, batch_size, identifier):
     def send_warnings_to_log(
